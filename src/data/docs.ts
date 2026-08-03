@@ -13,14 +13,14 @@ export const docs: DocItem[] = [
   {
     code: "DOC-01",
     title: "User Manual",
-    description: "Setup, calibration, power-up sequence and safe operating limits for TRT-01.",
+    description: "Setup, calibration, power-up sequence and safe operating limits for 2 DOF Twin Rotor Helicopter Test Bed",
     href: "/docs/user-manual.pdf",
     kind: "PDF",
   },
   {
     code: "DOC-02",
-    title: "Project Report",
-    description: "Full write-up: objectives, modeling, controller design and results.",
+    title: "Project Proposal",
+    description: "Full write-up: objectives, modeling, controller design.",
     href: "/docs/project-report.pdf",
     kind: "PDF",
   },
@@ -41,7 +41,7 @@ export const docs: DocItem[] = [
   },
   {
     code: "DOC-06",
-    title: "Test & Calibration Log",
+    title: "Testing & Results",
     description: "Recorded step responses, tuning notes and calibration data.",
     href: "/docs/test-log.pdf",
     kind: "DOC",
