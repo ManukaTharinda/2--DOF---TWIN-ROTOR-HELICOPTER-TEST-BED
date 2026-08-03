@@ -52,7 +52,7 @@ export function Team() {
             <a
               key={m.name}
               href={m.link ?? "#"}
-              className="panel p-5 flex flex-col gap-4 hover:border-[var(--teal)]/50 transition-colors"
+              className="panel p-6 flex flex-col gap-7 hover:border-[var(--teal)]/50 transition-colors"
             >
               <div className="flex items-start justify-between">
                 <Avatar name={m.name} photo={m.photo} />
