@@ -43,7 +43,7 @@ export function Team() {
         <h2 className="font-display text-3xl font-semibold tracking-tight mb-2">
          Superviosor & Team Members.
         </h2>
-        <p className="text-[var(--text-muted)] max-w-lg mb-12">{" "}
+        <p className="text-[var(--text-muted)] max-w-lg mb-15">{" "}
 
         </p>
 
