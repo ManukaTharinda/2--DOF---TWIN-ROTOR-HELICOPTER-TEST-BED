@@ -8,8 +8,8 @@ export function Documentation() {
         Manual, reports & source.
       </h2>
       <p className="text-[var(--text-muted)] max-w-lg mb-12">
-        Everything needed to build, wire, and run TRT-01 — drop your files into{" "}
-        <span className="font-mono text-[var(--teal)] text-[0.85em]">/public/docs</span>.
+        Everything About Our Project{" "}
+        <span className="font-mono text-[var(--teal)] text-[0.85em]"></span>.
       </p>
 
       <div className="grid sm:grid-cols-2 gap-4">

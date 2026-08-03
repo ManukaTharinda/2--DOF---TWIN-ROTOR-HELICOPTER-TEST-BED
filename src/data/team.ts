@@ -37,7 +37,7 @@ export const team: TeamMember[] = [
     role: "UWU/BET/21/090",
     focus: "Developed The Source Code For Microcontroller",
     photo: "/team/Manuka.jpg",
-    link: "#",
+    link: "https://www.linkedin.com/in/manuka-tharinda-a18a2a247/",
   },
   {
     name: "E.M.D. Ekanayaka",
