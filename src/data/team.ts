@@ -23,15 +23,15 @@ export const team: TeamMember[] = [
     name: "M.L.E.Kavinda",
     role: "UWU/BET/21/004",
     focus: "Cordination of Project, MATLAB Simulations,Mechanical Drawings",
-    photo:  "/team/Lakshan.jpg",
+    photo:  "/team/Kai.jpg",
     link: "#",
   },
   {
     name: "K.D.C.Prabhath",
     role: " UWU/BET/21/008 ",
     focus: "3D Printing & Assembling Parts,GUI,Doccumentation",
-    photo: null,
-    link: "#",
+    photo: "/team/Chathura.jpg",
+    link: "",
   },
   {
     name: "P.A.L.S.Kavinda",
@@ -43,7 +43,7 @@ export const team: TeamMember[] = [
   {
     name: "W.M.M.T.Dissanayaka",
     role: "UWU/BET/21/090",
-    focus: "Developed The Source Code For Microcontroller",
+    focus: "Developed the Source Code For Microcontroller",
     photo: "/team/Manuka.jpg",
     link: "https://www.linkedin.com/in/manuka-tharinda-a18a2a247/",
   },
@@ -51,7 +51,7 @@ export const team: TeamMember[] = [
     name: "E.M.D. Ekanayaka",
     role: "UWU/BET/21/090",
     focus: "Doccumentation Works,Electrical wiring,3D Printing",
-    photo: null,
+    photo: "/team/jilbu.jpg",
     link: "#",
   },
 ];

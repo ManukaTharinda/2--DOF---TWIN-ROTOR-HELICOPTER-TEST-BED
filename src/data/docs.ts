@@ -14,14 +14,14 @@ export const docs: DocItem[] = [
     code: "DOC-01",
     title: "User Manual",
     description: "Setup, calibration, power-up sequence and safe operating limits for 2 DOF Twin Rotor Helicopter Test Bed",
-    href: "/docs/user-manual.pdf",
+    href: "/docs/User_Manual.pdf",
     kind: "PDF",
   },
   {
     code: "DOC-02",
     title: "Project Proposal",
     description: "Full write-up: objectives, modeling, controller design.",
-    href: "/docs/project-report.pdf",
+    href: "/docs/Project Proposal.pdf",
     kind: "PDF",
   },
 
@@ -29,7 +29,7 @@ export const docs: DocItem[] = [
     code: "DOC-04",
     title: "Controller Source Code",
     description: "Firmware and control-loop source, packaged as a zip archive.",
-    href: "/docs/source-code.zip",
+    href: "/docs/ProjectFolder.zip",
     kind: "ZIP",
   },
   {

@@ -33,11 +33,8 @@ export function Nav() {
             <span className="absolute inline-flex h-full w-full rounded-full bg-[var(--teal)] opacity-75" style={{ animation: "blink 2.4s ease-in-out infinite" }} />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--teal)]" />
           </span>
-          <span className="font-display font-semibold tracking-tight text-[15px]">
-            TRT-01
-          </span>
           <span className="hidden sm:inline text-[var(--text-dim)] font-mono text-[11px] tracking-wide">
-            /2-DOF-TWIN-ROTOR
+            2-DOF-TWIN-ROTOR
           </span>
         </a>
 
