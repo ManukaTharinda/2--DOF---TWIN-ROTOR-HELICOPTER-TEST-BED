@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0e13;
+  --bg-raised: #0f151b;
+  --panel: #121a21;
+  --panel-line: rgba(148, 178, 194, 0.14);
+  --grid-line: rgba(79, 216, 196, 0.07);
+  --text: #e9eff2;
+  --text-muted: #8393a1;
+  --text-dim: #59666f;
+  --teal: #49d9c4;
+  --teal-dim: rgba(73, 217, 196, 0.14);
+  --amber: #f2a83d;
+  --amber-dim: rgba(242, 168, 61, 0.14);
+
+  --font-display: ui-sans-serif, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, "Roboto Mono", monospace;
+  --font-body: ui-sans-serif, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: var(--teal);
+  color: #05100e;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.panel {
+  background: linear-gradient(180deg, var(--panel), var(--bg-raised));
+  border: 1px solid var(--panel-line);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  color: var(--teal);
+}
+
+.readout {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+@keyframes pitch-osc {
+  0%, 100% { transform: rotate(-9deg); }
+  50% { transform: rotate(7deg); }
+}
+
+@keyframes prop-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-rise {
+  animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
