@@ -16,7 +16,7 @@ export const team: TeamMember[] = [
     name: "ENG.H.G.C.R.Laksiri",
     role: "Supervisor",
     focus: "Project Supervisor",
-    photo:  "/team/Lakshan.jpg",
+    photo:  "",
     link: "#",
   },
   {
