@@ -41,13 +41,13 @@ export function Team() {
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="eyebrow mb-4">06 · Team</div>
         <h2 className="font-display text-3xl font-semibold tracking-tight mb-2">
-          Five people, one rig.
+         Superviosor & Team Members.
         </h2>
         <p className="text-[var(--text-muted)] max-w-lg mb-12">{" "}
 
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-5">
           {team.map((m, i) => (
             <a
               key={m.name}
