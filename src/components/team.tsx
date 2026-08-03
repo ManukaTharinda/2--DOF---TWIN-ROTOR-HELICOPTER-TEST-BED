@@ -17,17 +17,17 @@ function Avatar({ name, photo }: { name: string; photo: string | null }) {
   const showPhoto = photo && !failed;
 
   return (
-    <div className="relative h-16 w-16 shrink-0 border border-[var(--panel-line)] bg-[var(--bg-raised)] overflow-hidden">
+    <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl border border-[var(--panel-line)] bg-[var(--bg-raised)] shadow-sm">
       {showPhoto ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={photo}
           alt={name}
           onError={() => setFailed(true)}
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
         />
       ) : (
-        <div className="h-full w-full flex items-center justify-center font-display text-lg text-[var(--teal)]">
+        <div className="flex h-full w-full items-center justify-center font-display text-xl font-semibold text-[var(--teal)]">
           {initials(name)}
         </div>
       )}
@@ -37,35 +37,48 @@ function Avatar({ name, photo }: { name: string; photo: string | null }) {
 
 export function Team() {
   return (
-    <section id="team" className="border-t border-[var(--panel-line)] bg-[var(--bg-raised)]/40">
-      <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <div className="eyebrow mb-4">06 · Team</div>
-        <h2 className="font-display text-3xl font-semibold tracking-tight mb-2">
-         Superviosor & Team Members.
-        </h2>
-        <p className="text-[var(--text-muted)] max-w-lg mb-15">{" "}
+    <section
+      id="team"
+      className="border-t border-[var(--panel-line)] bg-[var(--bg-raised)]/40"
+    >
+      <div className="mx-auto max-w-7xl px-5 py-20 sm:px-6 md:py-28 lg:px-8">
+        <div className="mb-4 font-mono text-xs uppercase tracking-[0.22em] text-[var(--teal)]">
+          06 · Team
+        </div>
 
+        <h2 className="mb-3 max-w-3xl font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+          Superviosor & Team Members.
+        </h2>
+
+        <p className="mb-12 max-w-2xl text-sm leading-relaxed text-[var(--text-muted)] sm:text-base">
+          {" "}
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           {team.map((m, i) => (
             <a
               key={m.name}
               href={m.link ?? "#"}
-              className="panel p-6 flex flex-col gap-7 hover:border-[var(--teal)]/50 transition-colors"
+              className="group panel flex min-h-[285px] flex-col gap-7 rounded-xl border border-[var(--panel-line)] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--teal)]/60 hover:shadow-lg sm:p-6"
             >
-              <div className="flex items-start justify-between">
+              <div className="flex items-start justify-between gap-4">
                 <Avatar name={m.name} photo={m.photo} />
-                <span className="font-mono text-[10px] text-[var(--text-dim)]">
+
+                <span className="rounded-md border border-[var(--panel-line)] px-2 py-1 font-mono text-[10px] text-[var(--text-dim)]">
                   {String(i + 1).padStart(2, "0")}
                 </span>
               </div>
-              <div>
-                <h3 className="font-display text-[0.98rem] font-medium">{m.name}</h3>
-                <p className="font-mono text-[10px] tracking-wide text-[var(--teal)] mt-1">
+
+              <div className="mt-auto">
+                <h3 className="font-display text-base font-medium leading-snug">
+                  {m.name}
+                </h3>
+
+                <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--teal)]">
                   {m.role}
                 </p>
-                <p className="text-[var(--text-muted)] text-[0.82rem] leading-relaxed mt-2.5">
+
+                <p className="mt-3 text-[0.82rem] leading-relaxed text-[var(--text-muted)]">
                   {m.focus}
                 </p>
               </div>
