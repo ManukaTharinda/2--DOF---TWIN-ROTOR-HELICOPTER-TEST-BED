@@ -24,13 +24,7 @@ export const docs: DocItem[] = [
     href: "/docs/project-report.pdf",
     kind: "PDF",
   },
-  {
-    code: "DOC-03",
-    title: "Wiring & Electronics Guide",
-    description: "Encoder pinout, motor driver connections and power distribution.",
-    href: "/docs/wiring-guide.pdf",
-    kind: "PDF",
-  },
+
   {
     code: "DOC-04",
     title: "Controller Source Code",
